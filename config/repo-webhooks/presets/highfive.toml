@@ -1,0 +1,4 @@
+url = "https://internal-secret-rust-bots.rust-lang.org/highfive/newpr.py"
+content-type = "form"
+require-secret = false
+events = ["issue_comment", "pull_request"]

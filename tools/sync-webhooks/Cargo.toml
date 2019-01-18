@@ -1,0 +1,15 @@
+[package]
+name = "sync-webhooks"
+version = "0.1.0"
+authors = ["Pietro Albini <pietro@pietroalbini.org>"]
+edition = "2018"
+
+[dependencies]
+github = { path = "../../libs/github" }
+
+log = "0.4.6"
+env_logger = "0.6.0"
+failure = "0.1.5"
+serde = { version = "1.0.84", features = ["derive"] }
+toml = "0.4.10"
+structopt = "0.2.14"

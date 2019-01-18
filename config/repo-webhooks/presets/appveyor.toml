@@ -1,0 +1,7 @@
+url = "https://ci.appveyor.com/api/github/webhook?id={secret}"
+content-type = "form"
+require-secret = false
+events = ["push", "pull_request"]
+
+# AppVeyor has the secret key in its URL, so the tool can't update it
+avoid-changes = true

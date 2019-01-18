@@ -1,0 +1,4 @@
+url = "https://rfcbot.rs/api/github-webhook"
+content-type = "json"
+require-secret = true
+events = ["*"]

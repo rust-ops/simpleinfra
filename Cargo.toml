@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "libs/github",
+    "tools/sync-webhooks",
+]

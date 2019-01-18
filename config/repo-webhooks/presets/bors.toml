@@ -1,0 +1,14 @@
+url = "https://buildbot2.rust-lang.org/homu/github"
+content-type = "json"
+require-secret = true
+events = [
+    "check_run",
+    "commit_comment",
+    "issues",
+    "issue_comment",
+    "pull_request",
+    "pull_request_review",
+    "pull_request_review_comment",
+    "push",
+    "status",
+]
