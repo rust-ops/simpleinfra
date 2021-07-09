@@ -1,0 +1,27 @@
+name: Run GitHub Release
+description: Fetches and runs any GitHub released binary.
+
+inputs:
+  args:
+    description: Arguments to pass to the binary. Default: no arguments
+    required: false
+  bin:
+    description: The binary file stem e.g. `mdbook`. Default: Same as repo name.
+    required: false
+  owner:
+    description: The owner of the GitHub repository e.g. `rust-lang`
+    required: false
+    default: rust-lang
+  regex:
+    description: The regex to match against the name of the asset release.
+    required: true
+  repo:
+    description: The name of the repository containing the releases.
+    required: true
+  token:
+    description: GitHub token for authenication.
+    required: true
+
+runs:
+  using: node12
+  main: dist/index.js
